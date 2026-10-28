@@ -33,8 +33,8 @@ if(!Array.isArray(qualityReview.exclusions))throw Error('Invalid data-quality ex
 const sourceRecords=datasets.flatMap(d=>d.rows).map(r=>({...r}));
 for(const dataset of datasets)for(const r of dataset.rows){
 const exclusion=qualityReview.exclusions.find(q=>r.SpatialDimValueCode===q.country_code&&r.IndicatorCode===q.indicator_code&&r.Period===q.period&&r.FactValueNumeric.trim()===q.value);
-r.DataQualityStatus=exclusion?'excluded':'not-flagged';r.DataQualityReason=exclusion?exclusion.reason:'';r.DataQualityReference=exclusion?exclusion.reference_url:'';
-r.OriginalFactValueNumeric='';r.OriginalValue='';r.OriginalDataNature='';r.ReferenceIndicatorCode='';
+r.DataQualityStatus=exclusion?'excluded':(r.DataQualityStatus||'not-flagged');r.DataQualityReason=exclusion?exclusion.reason:(r.DataQualityReason||'');r.DataQualityReference=exclusion?exclusion.reference_url:(r.DataQualityReference||'');
+r.OriginalFactValueNumeric??='';r.OriginalValue??='';r.OriginalDataNature??='';r.ReferenceIndicatorCode??='';
 const correction=(qualityReview.corrections||[]).find(q=>r.SpatialDimValueCode===q.country_code&&r.IndicatorCode===q.indicator_code&&r.Period===q.period&&r.FactValueNumeric.trim()===q.value);
 if(correction){
 const reference=sourceRecords.find(t=>t.SpatialDimValueCode===correction.country_code&&t.IndicatorCode===correction.reference_indicator_code&&t.Period===correction.period&&t.FactValueNumeric.trim()===correction.reference_value);

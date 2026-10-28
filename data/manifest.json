@@ -1,0 +1,120 @@
+{
+  "files": [
+    {
+      "path": "treatment-coverage-among-diagnosed.csv",
+      "description": "treatment coverage among diagnosed",
+      "indicators": [
+        "HEPATITIS_HBV_TREATMENT_PERDIAGNOSED_PER100",
+        "HEPATITIS_HCV_TREATMENT_PERDIAGNOSED_PER100"
+      ]
+    },
+    {
+      "path": "mortality-rate.csv",
+      "description": "mortality rate",
+      "indicators": [
+        "HEPATITIS_DEATHS_RATE"
+      ]
+    },
+    {
+      "path": "hbsag-prevalence-and-carriers-by-age.csv",
+      "description": "hbsag prevalence and carriers by age",
+      "indicators": [
+        "HEPB_HBSAG_CARRIER",
+        "SDGHEPHBSAGPRV"
+      ]
+    },
+    {
+      "path": "antenatal-hbv-treatment.csv",
+      "description": "antenatal hbv treatment",
+      "indicators": [
+        "HEPATITIS_HBV_TREATMENT_ANC_PERCENT"
+      ]
+    },
+    {
+      "path": "hbv-hcv-population-prevalence.csv",
+      "description": "hbv hcv population prevalence",
+      "indicators": [
+        "HEPATITIS_HBV_PREVALENCE_PER100",
+        "HEPATITIS_HCV_PREVALENCE_PER100"
+      ]
+    },
+    {
+      "path": "hbv-hcv-diagnosed-counts.csv",
+      "description": "hbv hcv diagnosed counts",
+      "indicators": [
+        "HEPATITIS_HBV_DIAGNOSED_NUM",
+        "HEPATITIS_HCV_DIAGNOSED_CRD_NUM",
+        "HEPATITIS_HCV_DIAGNOSED_NUM"
+      ]
+    },
+    {
+      "path": "diagnosis-coverage.csv",
+      "description": "diagnosis coverage",
+      "indicators": [
+        "HEPATITIS_HBV_DIAGNOSIS_PERINFECTED_PER100",
+        "HEPATITIS_HCV_DIAGNOSIS_PERINFECTED_CRD_PER100"
+      ]
+    },
+    {
+      "path": "hbv-treatment-counts.csv",
+      "description": "hbv treatment counts",
+      "indicators": [
+        "HEPATITIS_HBV_TREATMENT_NUM"
+      ]
+    },
+    {
+      "path": "treatment-coverage-among-infected.csv",
+      "description": "treatment coverage among infected",
+      "indicators": [
+        "HEPATITIS_HBV_TREATMENT_PERINFECTED_PER100",
+        "HEPATITIS_HCV_TREATMENT_CUM_PERINFECTED_CRD_PER100"
+      ]
+    },
+    {
+      "path": "antenatal-hbsag-testing.csv",
+      "description": "antenatal hbsag testing",
+      "indicators": [
+        "HEPATITIS_HBV_TESTING_ANC_PERCENT"
+      ]
+    },
+    {
+      "path": "hbv-hcv-infected-population.csv",
+      "description": "hbv hcv infected population",
+      "indicators": [
+        "HEPATITIS_HBV_LIVINGWITH_NUM",
+        "HEPATITIS_HCV_LIVINGWITH_CRD_NUM",
+        "HEPATITIS_HCV_LIVINGWITH_NUM"
+      ]
+    },
+    {
+      "path": "mortality-counts.csv",
+      "description": "mortality counts",
+      "indicators": [
+        "HEPATITIS_DEATHS_NUM"
+      ]
+    },
+    {
+      "path": "new-infections.csv",
+      "description": "new infections",
+      "indicators": [
+        "HEPATITIS_HBV_INFECTIONS_NEW_NUM",
+        "HEPATITIS_HCV_INFECTIONS_NEW_NUM"
+      ]
+    },
+    {
+      "path": "antenatal-hbsag-positivity.csv",
+      "description": "antenatal hbsag positivity",
+      "indicators": [
+        "HEPATITIS_HBV_TESTPOSITIVE_ANC_PERCENT"
+      ]
+    },
+    {
+      "path": "hcv-treatment-counts.csv",
+      "description": "hcv treatment counts",
+      "indicators": [
+        "HEPATITIS_HCV_TREATMENT_CUM_NUM",
+        "HEPATITIS_HCV_TREATMENT_INITIATED_NUM"
+      ]
+    }
+  ]
+}

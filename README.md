@@ -1,5 +1,7 @@
 # Viral hepatitis dashboard
 
+**[Open the dashboard →](https://pestmeester6.github.io/viral-hepatitis-dashboard/)**
+
 Country-level WHO hepatitis explorer with region/country filters, top-15 comparisons, labelled trends, a complete all-year table, source bounds and CSV downloads. Country overviews summarize all available indicators using fixed data-grounded sentences, not a live AI service.
 
 ## Update data

@@ -1,22 +1,34 @@
 {
   "reviewed_on": "2026-10-28",
-  "notes": "Exact-match exclusions preserve raw sources and automatically stop applying if replacement CSV values change. External contextual estimates are not substituted into WHO indicator series.",
-  "exclusions": [
+  "notes": "Review uses uploaded files only. User-approved adoption of the uploaded modelled including-cured count; raw CSVs remain unchanged. Rules match exact source values and reference records.",
+  "corrections": [
     {
       "country_code": "PER",
       "indicator_code": "HEPATITIS_HCV_LIVINGWITH_NUM",
       "period": "2024",
       "value": "3440210",
-      "reason": "Disputed national HCV burden: uploaded 3,440,210 conflicts with MINSA's estimate of 34,111 people published 16 July 2024. No verified replacement for this WHO indicator/reference period is available.",
-      "reference_url": "https://www.gob.pe/institucion/minsa/noticias/989700-minsa-realizo-campanas-gratuitas-para-promover-el-diagnostico-oportuno-contra-las-hepatitis-b-y-c"
-    },
+      "reference_indicator_code": "HEPATITIS_HCV_LIVINGWITH_CRD_NUM",
+      "reference_value": "65290",
+      "reason": "User-approved replacement: use 65,290 from the uploaded modelled HCV series, including people cured. This is an adopted estimate, not an independently verified active-infection count.",
+      "reference_url": "data/hbv-hcv-infected-population.csv"
+    }
+  ],
+  "exclusions": [
     {
       "country_code": "PER",
       "indicator_code": "HEPATITIS_HCV_PREVALENCE_PER100",
       "period": "2024",
       "value": "9.92",
-      "reason": "Disputed prevalence paired with the excluded 3,440,210 HCV count. Excluded pending verification of the original report, unit and denominator; no inferred decimal correction applied.",
-      "reference_url": "https://www.gob.pe/institucion/minsa/noticias/989700-minsa-realizo-campanas-gratuitas-para-promover-el-diagnostico-oportuno-contra-las-hepatitis-b-y-c"
+      "reason": "User identified the uploaded prevalence as erroneous. Withheld; no replacement proportion or population denominator has been verified from uploaded files.",
+      "reference_url": "data/hbv-hcv-population-prevalence.csv"
+    },
+    {
+      "country_code": "PER",
+      "indicator_code": "HEPATITIS_HCV_LIVINGWITH_NUM",
+      "period": "2024",
+      "value": "3440210",
+      "reason": "Disputed original count: exclude if the approved uploaded reference estimate is unavailable. No external data are used.",
+      "reference_url": "data/hbv-hcv-infected-population.csv"
     }
   ]
 }
